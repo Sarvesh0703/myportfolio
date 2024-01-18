@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,42 +17,9 @@
 </body>
 <!------------ HEADER SECTION ----------->
 <div class="container">
-  <!-- <nav id="header">
-    <div class="nav-logo">
-      <a href="#" class="nav-name">Portfolio</a>
-      <span>.</span>
-    </div>
-    <div class="nav-menu" id="myNavMenu">
-      <ul class="nav_menu_list">
-        <li class="nav_list">
-          <a href="#home" class="nav-link">Home</a>
-          <div class="circle"></div>
-        </li>
-        <li class="nav_list">
-          <a href="#about" class="nav-link">About</a>
-          <div class="circle"></div>
-        </li>
-        <li class="nav_list">
-          <a href="#projects" class="nav-link">Projects</a>
-          <div class="circle"></div>
-        </li>
-        <li class="nav_list">
-          <a href="#contact" class="nav-link">Contact</a>
-          <div class="circle"></div>
-        </li>
-      </ul>
-    </div>
-    <div class="nav-button">
-      <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
-    </div>
-    <div class="nav-menu-btn">
-      <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-    </div>
-  </nav> -->
-
   <header>
     <div class="nav-wrapper">
-      <div class="nav-logo">
+      <div class="nav-logo head-title">
         <a href="#" class="nav-name">Portfolio</a>
         <span>.</span>
       </div>
@@ -65,7 +33,7 @@
         <div class="nav-container">
           <ul class="nav-tabs">
             <li class="nav-tab"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-tab"><a href="#about" class="nav-link">About Me</a></li>
+            <li class="nav-tab"><a href="#about" class="nav-link">About</a></li>
             <li class="nav-tab"><a href="#projects" class="nav-link">Projects</a></li>
             <li class="nav-tab"><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
@@ -101,13 +69,13 @@
           </script>
         </div>
         <div class="featured-text-info">
-          <p>Experience frontend developer with a passion for creating visually stunning and user-friendly websites.</p>
+          <p class="head-title">Experience frontend developer with a passion for creating visually stunning and user-friendly websites.</p>
         </div>
         <div class="featured-text-btn">
           <button class="btn blue-btn">Hire Me</button>
           <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
         </div>
-        <div class="social_icons">
+        <div class="social_icons head-title">
           <div class="icon"><i class="uil uil-instagram"></i></div>
           <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
           <div class="icon"><i class="uil uil-dribbble"></i></div>
@@ -137,8 +105,8 @@
       <div class="row">
         <div class="col">
           <div class="about-info">
-            <h3>My Introduction</h3>
-            <p>I am well-versed in HTML, CSS and JavaScript, and other cutting edge frameworks and libraries, which
+            <h3 class="head-title">My Introduction</h3>
+            <p class="head-title">I am well-versed in HTML, CSS and JavaScript, and other cutting edge frameworks and libraries, which
               allows me to implement interactive features. Additionally, I have experience working with content
               management systems (CMS) like Wordpress.</p>
             <div class="about-btn">
@@ -149,7 +117,8 @@
         <div class="col">
           <div class="skills-box">
             <div class="skills-header">
-              <h3>Frontend (Key Skills)</h3>
+              <h3 class="head-title">Frontend Developer</h3>
+              <h3>(Key Skills)</h3>
             </div>
             <div class="skills-list">
               <span>HTML</span>
@@ -171,9 +140,9 @@
 
     <!------------ PROJECTS SECTION ----------->
     <section class="section" id="projects">
-      <div class="top-header">
+      <div class="top-header title">
         <h1>Projects</h1>
-        <span>A project is a brief, descriptive name given to a specific undertaking or initiative.</span>
+        <span class="head-title">A project is a brief, descriptive name given to a specific undertaking or initiative.</span>
       </div>
       <div class="project-container">
         <div class="project-box">
@@ -197,9 +166,9 @@
 
     <!------------ CONTACT SECTION ----------->
     <section class="section" id="contact">
-      <div class="top-header">
+      <div class="top-header title">
         <h1>Get In Touch</h1>
-        <span>Do you have a project in your mind, contact me here</span>
+        <span class="head-title">Do you have a project in your mind, contact me here</span>
       </div>
       <div class="row">
         <div class="col">
@@ -261,15 +230,26 @@
   <!------------ FOOTER SECTION END ----------->
 </div>
 
-<a href="https://api.whatsapp.com/send/?phone=7985771161&amp;;text&amp;;app_absent=0" class="btn-whatsapp-pulse" target="_blank">
+<a href="https://api.whatsapp.com/send/?phone=7275803627&amp;;text&amp;;app_absent=0" class="btn-whatsapp-pulse" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
 </body>
 
 
 <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  ScrollReveal({ 
+    reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+    });
+
+ScrollReveal().reveal('.head-title', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.featured-box, .image', { delay: 600, origin: 'bottom' });
+</script>
 
 </body>
 

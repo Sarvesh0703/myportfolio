@@ -240,7 +240,7 @@ nav {
         backdrop-filter: blur(20px);
         width: 100%;
         min-height: 450px;
-        height: 90vh;
+        height: 100vh;
         transition: .3s;
     }
 
@@ -335,7 +335,7 @@ nav {
     position: relative;
     display: flex;
     height: 100vh;
-    min-height: 700px;
+    min-height: 650px;
 }
 
 .featured-text {
@@ -852,6 +852,17 @@ footer {
 
 /* RESPONSIVE CSS */
 
+@media only screen and (max-width: 1150px){
+    .nav-wrapper {
+        padding-inline: 5vw;
+    }
+
+    .nav-link {
+        padding-inline: 5px;
+    }
+}
+
+
 @media only screen and (max-width: 1024px) {
     .featured-text {
         padding: 0;
@@ -870,33 +881,8 @@ footer {
         display: none;
     }
 
-    .nav-menu.responsive {
-        left: 0;
-    }
-
-    .nav-menu {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(20px);
-        width: 100%;
-        min-height: 450px;
-        height: 90vh;
-        transition: .3s;
-    }
-
-    .nav_menu_list {
-        flex-direction: column;
-    }
-
-    .nav-menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .nav-link {
+        margin-inline: 10px;
     }
 
     .featured-box {
@@ -910,7 +896,7 @@ footer {
         order: 2;
         justify-content: center;
         align-items: flex-start;
-        min-height: 60vh;
+        min-height: 54vh;
     }
 
     .social_icons {
@@ -973,10 +959,6 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
-
-    footer {
-        padding-block: 30px 20px;
-    }
 }
 
 /* MOBILE VIEW MEDIA QUERRY CSS */
@@ -988,6 +970,7 @@ footer {
 
     .nav-wrapper {
         padding-inline: 5vw;
+        height: 58px;
     }
 
     .wrapper {
@@ -999,7 +982,7 @@ footer {
     }
 
     .featured-name {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .featured-text-card span {
@@ -1021,14 +1004,38 @@ footer {
     .input-field {
         width: 100%;
     }
-	.top-header h1::after {
+
+    footer {
+        padding-block: 30px 20px;
+    }
+
+    .bottom-footer p {
+        font-size: 12px;
+    }
+
+    .btn-whatsapp-pulse {
+        padding: 25px;
+    }
+
+    .top-header h1::after {
         left: -15%;
     }
 
     .top-header h1::before {
         left: -1%;
     }
-	.bottom-footer p {
-        font-size: 12px;
+
+    .top-header h1 {
+        font-size: 24px;
+    }
+
+    .title h1{
+        margin-top: -40px;
+    }
+
+    .scroll-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
     }
 }
