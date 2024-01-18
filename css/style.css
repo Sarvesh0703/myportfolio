@@ -172,7 +172,7 @@ nav {
 .nav-name {
     font-size: 30px;
     font-weight: 600;
-    color: var(--second-color);
+    color: var(--text-color-third);
     text-decoration: none;
 }
 
@@ -367,7 +367,7 @@ nav {
 
 .typedText {
     text-transform: capitalize;
-    color: var(--second-color);
+    color: var(--text-color-third);
 }
 
 .featured-text-info {
