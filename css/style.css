@@ -927,8 +927,8 @@ footer {
 
     .image,
     .image img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 
     .row {
@@ -977,10 +977,6 @@ footer {
     footer {
         padding-block: 30px 20px;
     }
-
-    .bottom-footer p {
-        font-size: 12px;
-    }
 }
 
 /* MOBILE VIEW MEDIA QUERRY CSS */
@@ -1024,5 +1020,15 @@ footer {
 
     .input-field {
         width: 100%;
+    }
+	.top-header h1::after {
+        left: -15%;
+    }
+
+    .top-header h1::before {
+        left: -1%;
+    }
+	.bottom-footer p {
+        font-size: 12px;
     }
 }
