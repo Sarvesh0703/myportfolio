@@ -552,6 +552,7 @@ h3 {
     position: relative;
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     padding-block: 30px 70px;
     padding-inline: 20px;
@@ -577,10 +578,6 @@ h3 {
 
 .about-btn button:hover {
     background: var(--first-color-hover);
-}
-
-.skills-box {
-    margin: 10px;
 }
 
 .skills-header {
@@ -958,6 +955,10 @@ footer {
     .middle-footer .footer-menu {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .contact-section{
+        width: 100%;
     }
 }
 
