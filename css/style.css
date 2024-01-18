@@ -554,7 +554,7 @@ h3 {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding-block: 30px 70px;
+    padding-block: 30px;
     padding-inline: 20px;
     background: var(--color-white);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -1038,5 +1038,12 @@ footer {
         width: 120px;
         height: 40px;
         font-size: 14px;
+    }
+    .about-btn{
+        margin-top: 50px;
+    }
+
+    .skills-header {
+        margin-bottom: 15px;
     }
 }
