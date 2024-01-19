@@ -11,6 +11,7 @@
     --third-color: rgb(192, 166, 49);
     --color-pink: rgb(255 0 93);
     --first-shadow-color: rgba(0, 0, 0, 0.18);
+    --second-shadow-color: 0px 14px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -557,7 +558,7 @@ h3 {
     padding-block: 30px;
     padding-inline: 20px;
     background: var(--color-white);
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    box-shadow: var(--second-shadow-color);
     border-radius: 20px;
 }
 
@@ -619,7 +620,7 @@ h3 {
     height: 250px;
     background: var(--color-white);
     border-radius: 20px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    box-shadow: var(--second-shadow-color);
     overflow: hidden;
 }
 
@@ -672,7 +673,7 @@ h3 {
     height: 315px;
     background: var(--second-color);
     border-radius: 10px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    box-shadow: var(--second-shadow-color);
     overflow: hidden;
 }
 
