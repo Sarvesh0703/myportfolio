@@ -832,7 +832,7 @@ footer {
     background: #25d366;
     color: white;
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     left: 20px;
     font-size: 30px;
     display: flex;
@@ -863,6 +863,44 @@ footer {
         box-shadow: 0px 0px 0px 25px rgb(227 227 227 / 60%);
     }
 } */
+
+a.backToTop {
+    display: block;
+    position: fixed;
+    right: 36px;
+    bottom: 50px;
+    width: 45px;
+    height: 45px;
+    border-radius: 36px;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    z-index: 2;
+    transition: all .3s linear;
+    opacity: 1.02833;
+    box-shadow: 0px 5px 8px 0px rgb(0 0 0 / 10%);
+}
+
+
+a.backToTop span {
+    text-align: center;
+    display: block;
+    color: var(--second-color);
+    font-weight: 700;
+    font-size: .8em;
+}
+
+.backToTop i {
+    display: block;
+    margin: 4px auto 0;
+    width: 14px;
+    height: 14px;
+    margin-bottom: 5px;
+}
+
+a.backToTop:hover {
+    background: #f2f2f2;
+    text-decoration: none;
+}
 
 
 /* RESPONSIVE CSS */
@@ -1025,8 +1063,8 @@ footer {
     }
 
     footer {
-        padding-block: 20px 14px;
-        row-gap: 20px;
+        padding-block: 18px 15px;
+        row-gap: 18px;
     }
 
     .bottom-footer p {
@@ -1034,7 +1072,15 @@ footer {
     }
 
     .btn-whatsapp-pulse {
-        padding: 25px;
+        padding: 21px;
+        bottom: 40px;
+        left: 18px;
+    }
+
+    a.backToTop {
+        right: 10px;
+        bottom: 30px;
+
     }
 
     .top-header h1::after {
@@ -1068,11 +1114,16 @@ footer {
         height: 35px;
     }
 
-    .footer-social-icons, .social_icons {
+    .footer-social-icons,
+    .social_icons {
         gap: 18px;
     }
 
     .skills-header {
         margin-bottom: 15px;
+    }
+
+    .btn-whatsapp-pulse i {
+        font-size: 24px;
     }
 }
