@@ -1072,15 +1072,14 @@ a.backToTop:hover {
     }
 
     .btn-whatsapp-pulse {
-        padding: 21px;
-        bottom: 40px;
-        left: 18px;
+        padding: 24px;
+        bottom: 45px;
+        left: 15px;
     }
 
     a.backToTop {
-        right: 10px;
-        bottom: 30px;
-
+        right: 14px;
+        bottom: 40px;
     }
 
     .top-header h1::after {
@@ -1124,6 +1123,6 @@ a.backToTop:hover {
     }
 
     .btn-whatsapp-pulse i {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
