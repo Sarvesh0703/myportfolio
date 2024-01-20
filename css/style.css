@@ -395,7 +395,7 @@ nav {
 .social_icons {
     display: flex;
     margin-top: 3em;
-    gap: 30px;
+    gap: 20px;
 }
 
 .icon {
@@ -804,7 +804,7 @@ footer {
 
 .footer-social-icons {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .footer-social-icons .icon i {
@@ -1025,7 +1025,8 @@ footer {
     }
 
     footer {
-        padding-block: 30px 20px;
+        padding-block: 20px 14px;
+        row-gap: 20px;
     }
 
     .bottom-footer p {
@@ -1060,6 +1061,15 @@ footer {
 
     .about-btn {
         margin-top: 50px;
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-social-icons, .social_icons {
+        gap: 18px;
     }
 
     .skills-header {
