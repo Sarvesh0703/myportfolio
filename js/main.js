@@ -9,3 +9,8 @@ $('#myBtn').click(function (event) {
     event.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, 500);
 });
+
+function toggleNavbar(){
+    let navbar = document.querySelector('.navbar');
+    navbar.classList.toggle("navs")
+}
